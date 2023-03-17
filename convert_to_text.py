@@ -8,17 +8,6 @@ def save_file(filepath, content):
         outfile.write(content)
 
 
-'''def convert_docx2txt(src_dir, dest_dir):
-    files = os.listdir(src_dir)
-    files = [i for i in files if '.docx' in i]
-    for file in files:
-        try:
-            pypandoc.convert_file(src_dir+file, 'plain', outputfile=dest_dir+file.replace('.docx','.txt'))
-        except Exception as oops:
-            print(oops, file)'''
-            
-
-
 def convert_pdf2txt(src_dir, dest_dir):
     files = os.listdir(src_dir)
     files = [i for i in files if '.pdf' in i]
